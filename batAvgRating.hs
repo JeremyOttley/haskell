@@ -6,4 +6,4 @@ batAvgRating hits atBats
 	| otherwise = "JFC!"
 	where avg = hits / atBats
 
- --batAvgRating 20 100
+main = putStrLn (batAvgRating 20 100)
