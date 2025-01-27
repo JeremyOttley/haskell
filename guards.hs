@@ -3,9 +3,9 @@ smallWord s = (length s) <= 4
 
 bigOrSmall :: String -> String
 bigOrSmall s
-  | (smallWord s) == True = "Small..."
-  | (smallWord s) == False = "Big!"
-  | otherwise = "Error"
+  | (smallWord s) == True -> "Small..."
+  | (smallWord s) == False -> "Big!"
+  | otherwise -> "Error"
 
 
 main = do
