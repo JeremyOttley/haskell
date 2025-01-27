@@ -23,3 +23,14 @@ isImage f = elem (takeExtension f) imageExtensions
  
 
 main = print $ filter isImage ["file.mov", "file.bmp", "file.mp4"]
+
+
+
+-- import System.FilePath
+
+
+-- main = do
+--   let filename = "example.txt"
+--   let extension = takeExtension filename
+--   --print $ show $ map evenOrodd [1..10]
+--   putStrLn $ "test" ++ extension
