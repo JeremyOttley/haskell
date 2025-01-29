@@ -1,12 +1,14 @@
-smallWord :: String -> Bool
-smallWord s = (length s) <= 4
+module Main where
 
 bigOrSmall :: String -> String
 bigOrSmall s
-  | (smallWord s) == True = "Small..."
-  | (smallWord s) == False = "Big!"
+  | smallWord = "Small..."
+  | bigWord = "Big!"
   | otherwise = "Error"
+  where
+    smallWord = (length s) <= 4
+    bigWord = (length s) > 4
 
-
+main :: IO ()
 main = do
   print $ bigOrSmall "Ian"
