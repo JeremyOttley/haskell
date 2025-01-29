@@ -1,4 +1,6 @@
-:set prompt "\x03BB> "
-:set prompt-cont " > "
+--:set prompt "\x03BB> "
+--:set prompt-cont " > "
+:set prompt "\ESC[1;35m\x03BB> \ESC[m"
+:set prompt-cont "\ESC[1;35m > \ESC[m"
 :set -XOverloadedStrings
 :set editor vim
