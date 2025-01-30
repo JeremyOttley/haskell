@@ -1,8 +1,11 @@
+module Main where
+
 type Area = Float
 type Radius = Float
 
 circleArea :: Radius -> Area
-circleArea r = pi * r ^ 2
+circleArea radius = pi * radius ^ 2
 
+main :: IO ()
 main = do
     print $ circleArea 7.5
