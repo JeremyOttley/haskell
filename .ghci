@@ -3,4 +3,5 @@
 :set +t
 :set +m
 :seti -XOverloadedStrings
+:set -XInstanceSigs
 :set editor vim
